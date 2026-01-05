@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Deepfake Scanner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="card">
+    <h1>🌌 Deepfake Scanner</h1>
+    <p class="subtitle">
+      Scan videos for AI-manipulation. All analysis runs locally in your browser.
+    </p>
+
+    <input type="file" id="videoInput" accept="video/*" />
+    <input type="text" id="urlInput" placeholder="Or paste a video URL" />
+
+    <button id="scanBtn" class="galaxy-btn">Scan Video</button>
+    <button id="newScanBtn" class="galaxy-btn hidden">New Scan</button>
+
+    <div id="progress" class="hidden">Scanning...</div>
+    <div id="result" class="hidden"></div>
+  </div>
+
+  <footer>
+    Red Team Demo • Educational Use Only
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
